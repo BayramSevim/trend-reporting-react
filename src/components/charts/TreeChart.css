@@ -1,0 +1,26 @@
+/* src/app.css */
+
+/* SVG çizgileri (bağlantılar) beyaz olacak */
+.custom .link {
+  fill: none;
+  stroke: #4a628a; /* Oklar için beyaz renk */
+  stroke-width: 2px;
+}
+
+/* Düğümlerin çemberleri */
+.custom .node circle {
+  fill: steelblue; /* Düğüm çemberleri mavi */
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+/* Düğümdeki metinlerin boyutu, rengi ve konumu */
+.custom .node text {
+  font-size: 13px; /* Yazı boyutu 20px */
+  fill: white; /* Yazı rengi beyaz */
+  font-family: Arial, sans-serif; /* Yazı tipi */
+
+  /* Yazıları düğüm çemberlerinin altına yerleştiriyoruz */
+  transform: translateY(20px) translateX(30px);
+  text-anchor: middle; /* Yazıları çemberlerin ortasına hizala */
+}
